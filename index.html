@@ -1,7 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masterpiece OS Brand Concepts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Montserrat:wght@300;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0f1115; /* Deep tech dark grey */
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            gap: 80px; /* Space between the two options */
+        }
+
+        /* --- OPTION 1: The "Technical/Terminal" Vibe --- */
+        /* Good for: GitHub Readmes, Developer Documentation, Terminal Interfaces */
+        .option-1-container {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2rem;
+            letter-spacing: -1px;
+        }
+
+        .op1-main {
+            font-weight: 700;
+            color: #e0e0e0;
+        }
+
+        .op1-os {
+            color: #4f9fff; /* AI Blue */
+            font-weight: 700;
+        }
+
+        .op1-brackets {
+            color: #555; /* Subtle grey so they don't distract */
+        }
+
+        .op1-solver {
+            color: #a0a0a0; /* Dimmed text for the definition */
+            font-weight: 400;
+            font-size: 0.9em;
+        }
+
+        /* --- OPTION 2: The "Luxury Brand/Power" Vibe --- */
+        /* Good for: Investor Decks, Website Headers, Business Cards */
+        .option-2-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .op2-title {
+            font-family: 'Oswald', sans-serif; /* Strong, tall font */
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            line-height: 0.9;
+            background: linear-gradient(to right, #ffffff, #b3b3b3); /* Metallic gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .op2-os-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        .op2-os {
+            font-family: 'Oswald', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            color: #4f9fff; /* Matching accent color */
+        }
+
+        .op2-slash {
+            font-size: 3rem;
+            color: #333;
+            font-weight: 300;
+        }
+
+        .op2-subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 6px; /* Very wide spacing looks expensive */
+            color: #888;
+            margin-top: 15px;
+            border-top: 1px solid #333;
+            padding-top: 10px;
+            width: 100%;
+        }
+
+        /* Label for you to see which is which */
+        .label {
+            font-size: 0.7rem;
+            color: #444;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
 <body>
-    <h1>Hello World</h1>
-    <p>Welcome to Masterpiece OS.</p>
+
+    <div>
+        <div class="label">Option 1: The "Terminal" Look</div>
+        <div class="option-1-container">
+            <span class="op1-main">Masterpiece</span> <span class="op1-os">OS</span><span class="op1-brackets">[</span><span class="op1-solver">Omni Solver</span><span class="op1-brackets">]</span>
+        </div>
+    </div>
+
+    <div>
+        <div class="label">Option 2: The "Brand" Look</div>
+        <div class="option-2-container">
+            <div class="op2-title">MASTERPIECE</div>
+            <div class="op2-os-row">
+                <span class="op2-os">O</span>
+                <span class="op2-slash">/</span>
+                <span class="op2-os">S</span>
+            </div>
+            <div class="op2-subtitle">The Omni Solver</div>
+        </div>
+    </div>
+
 </body>
 </html>
